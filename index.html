@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Canvas tutorial</title>
+    <link rel='stylesheet prefetch' href='http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css'>
+    <link rel='stylesheet prefetch' href='css/canvas.css'>
+    <script src='http://code.jquery.com/jquery-1.11.1.min.js'></script>
+    <script src='http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js'></script>
+    <script src='js/canvas.js'></script>
+    <script type="text/javascript">
+    </script>
+    <style type="text/css">
+    </style>
+  </head >
+  <body onresize = "set_dimensions()">
+		<div id="fish_content"  class="fish_content test_red" ></div>
+    <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage -->
+    <script>
+
+    window.onload = function(){
+      //var img_url = "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?i=2017/1YZ07/1YZ07__2LZ/GBA_gmds1.jpg&v=deg04&std=true&country=US&send404=true";
+
+      var img_url = "https://static6.businessinsider.com/image/55f041449dd7cc17008b8fd4-3264-2448/img_2686%20(1).jpg";
+
+     // var img_url = "https://static.stereogum.com/uploads/2013/08/lauryn-hill.jpg";
+
+      var edit_img = new masterImage({'home':'fish_content','url':img_url,'type':"profile",'mode':"edit"});
+      edit_img.setCustomClass("edit_img");
+      edit_img.display();
+    }//end onload
+
+    </script>
+  </body>
+</html>
